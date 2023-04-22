@@ -1,7 +1,7 @@
 # DTSC-691-Capstone
 In this project I will be building a baseball stat predictor
 
-**Changes were made due to limited time and issues with trying to run a successful LSTM model. Switched to Decision Tree and Linear Regression Models and compares them.**
+**Changes were made due to limited time and issues with trying to run a successful LSTM model. Switched to Decision Tree and Linear Regression Models and compared them.**
 
 The goals of this project are to display knowledge acquired during my time in this degree program, while also pushing myself to learn new aspects of Data Science and Machine Learning which I believe is a representation of how knowledge is an ongoing process. I will learn how to build a web scraper and use that method to collect my data for this project. From there I will clean up my datasets. After cleaning up my datasets I will build a ridge regression model and utilize sequential feature selection to select which features will be used to predict each of the individual player statistics. My plan is to have 20 features for my batters data set and 25 for my pitchers dataset to be used in making the predictions. Due to the nature of attempting to predict player statistics this is a regression problem as I am trying to predict the exact stats for the player in the coming seasons and not just placing them into a specific class. (e.g. I want to predict a player's batting average and it could end up being .257, .287, .311(anywhere from 0.000 to 1.000) vs if the player will get a specific number of hits)
 
