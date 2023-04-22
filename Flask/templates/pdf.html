@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PDF Viewer</title>
+</head>
+<body>
+    <h1>Resume</h1>
+
+    <ul>
+        <li><a href="/">Home Page</a></li>
+        <li><a href="/batters">Predicted Batters Dataset</a></li>
+        <li><a href="/pitchers">Predicted Pitchers Dataset</a></li>
+    </ul>
+    
+    <iframe src="{{ url_for('static', filename='Resume - David Brito Jr 4_21_2023.pdf') }}" style="width: 100%; height: 600px;"></iframe>
+    
+</body>
+</html>
