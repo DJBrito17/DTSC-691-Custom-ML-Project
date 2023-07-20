@@ -1,10 +1,22 @@
 # DTSC-691-Capstone
-In this project I will be building a baseball stat predictor
+In this project I built a baseball stat predictor.
 
 **Changes were made due to limited time and issues with trying to run a successful LSTM model. Switched to Decision Tree and Linear Regression Models and compared them.**
 
-The goals of this project are to display knowledge acquired during my time in this degree program, while also pushing myself to learn new aspects of Data Science and Machine Learning which I believe is a representation of how knowledge is an ongoing process. I will learn how to build a web scraper and use that method to collect my data for this project. From there I will clean up my datasets. After cleaning up my datasets I will build a ridge regression model and utilize sequential feature selection to select which features will be used to predict each of the individual player statistics. My plan is to have 20 features for my batters data set and 25 for my pitchers dataset to be used in making the predictions. Due to the nature of attempting to predict player statistics this is a regression problem as I am trying to predict the exact stats for the player in the coming seasons and not just placing them into a specific class. (e.g. I want to predict a player's batting average and it could end up being .257, .287, .311(anywhere from 0.000 to 1.000) vs if the player will get a specific number of hits)
+Project Steps:
+1. Build a webscraper and collect player data from www.baseball-reference.com into 2 datasets (1 for pitchers & 1 for batters)
+2. Clean data 
+   - Remove irrelevant columns and sub-headers
+   - Resolve data type errors (Converted object values to their respective values)
+   - Handle differing null values
+   - Set minimal requirements for players (2+ seasons, 5+ games/season for pitchers, 15+ games & 2+ at bats/season for batters)
+   - Grouped data
+   - Reset Index
+3. Setup Feature Selectors (Ridge Regression w/ Time Series Split)
+4. Scale & Fit Data
+5. Ran multiple Decision Tree models and determined best model based on MSE for each player stat
+6. Compared best Decision Tree model for each stat to Linear regression models
+7. Unscale Data
+8. Create new Dataset comparing actual stats to the predicted stats
+9. Build a simple Flask app to display the data.
 
-While doing some research I became intrigued with Recurrent Neural Network models (RNN) and I am deciding to use it as my prediction model to both push me to learn a new model while also reviewing if its application is as beneficial as I believe it can be. Once I will learn how to build a RNN to predict the outcome of the individual player statistics that have been selected. I will be looking at predicting BA - batting average, RBI - runs batted in, HR - home runs, BB - base on balls (walks), and SO - strikeouts for batters and ERA - earned runs allowed, SO - strikeouts, WHIP - walks/hits per innings pitched, BB - base on balls (walks), W - wins and SV - saves for pitchers. Since pitchers can be very diverse in their purpose (ie. Starting pitcher, long reliever, middle reliever, lefty specialist, setup man, closer) There will be more options to predict, but they will not relate to each pitcher. For example a starting pitcher is not expected to have any saves and focuses more on wins and their other stats that are more overlapping and closers aren't expected to have any wins and focus primarily on saves along with the other overlapping stats. The other groups of relief pitchers can acquire both wins and saves depending on the flow of the game and circumstances but would primarily focus on the other overlapping stats that are relevant across all categories of pitchers.The reason I am still including wins and saves is because wins are very important for starting pitchers and saves are very important for closers.
-
- If I encounter additional time I will add additional models to compare to the RNN and see if my belief that a RNN model would be the best option for this project is accurate. After the model is completed I will use MSE to check for accuracy. Once all of these parts have been completed I will learn how to use Flask and build a GUI to provide my project with a visual and interactive experience. That will also bring me to compiling my project into a presentation for submission.
