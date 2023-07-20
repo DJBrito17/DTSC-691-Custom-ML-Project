@@ -5,7 +5,7 @@ Project Steps:
 1. Build a webscraper and collect player data from www.baseball-reference.com into 2 datasets (1 for pitchers & 1 for batters)
 2. Clean data 
    - Remove irrelevant columns and sub-headers
-   - Resolve data type errors (Converted object values to their respective values)
+   - Resolve data type errors
    - Handle differing null values
    - Set minimal requirements for players (2+ seasons, 5+ games/season for pitchers, 15+ games & 2+ at bats/season for batters)
    - Grouped data
