@@ -12,8 +12,8 @@ Project Steps:
    - Reset Index
 3. Setup Feature Selectors (Ridge Regression w/ Time Series Split)
 4. Scale & Fit Data
-5. Ran multiple Decision Tree models and determined best model based on MSE for each player stat
-6. Compared best Decision Tree model for each stat to Linear regression models
+5. Run multiple Decision Tree models and determine best model based on MSE for each player stat
+6. Compare best Decision Tree model for each stat to Linear regression models
 7. Unscale Data
 8. Create new Dataset comparing actual stats to the predicted stats
 9. Build a simple Flask app to display the data.
