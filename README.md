@@ -8,7 +8,7 @@ Project Steps:
    - Resolve data type errors
    - Handle differing null values
    - Set minimal requirements for players (2+ seasons, 5+ games/season for pitchers, 15+ games & 2+ at bats/season for batters)
-   - Grouped data
+   - Group data
    - Reset Index
 3. Setup Feature Selectors (Ridge Regression w/ Time Series Split)
 4. Scale & Fit Data
