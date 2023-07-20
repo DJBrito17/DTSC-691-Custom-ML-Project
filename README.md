@@ -1,7 +1,7 @@
 # DTSC-691-Capstone
 In this project I built a baseball stat predictor.
 
-**Changes were made due to limited time and issues with trying to run a successful LSTM model. Switched to Decision Tree and Linear Regression Models and compared them.**
+**NOTE: Changes were made due to limited time and issues with trying to run a successful LSTM model. Switched to Decision Tree and Linear Regression Models and compared them.**
 
 Project Steps:
 1. Build a webscraper and collect player data from www.baseball-reference.com into 2 datasets (1 for pitchers & 1 for batters)
